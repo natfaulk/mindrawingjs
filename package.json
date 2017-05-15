@@ -1,0 +1,21 @@
+{
+  "name": "mindrawingjs",
+  "version": "0.1.0",
+  "description": "A very basic HTML 5 drawing library. Taking inspiration from p5.js but much ligter weight.",
+  "main": "drawing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "canvas",
+    "drawing",
+    "js"
+  ],
+  "author": "natfaulk",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.0"
+  }
+}

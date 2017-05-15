@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>MinDrawingJS example</title>
+  <script src="../build/drawing.min.js"></script>
+</head>
+<body>
+  <canvas id="myCanvas">
+
+  <script type="text/javascript">
+    const RED = '#FF0000';
+    const GREEN = '#00FF00';
+    const BLACK = '#000';
+    const WHITE = '#FFF';
+
+    drawing.setup('myCanvas', 800, 600);
+    drawing.background(BLACK);
+    drawing.stroke(GREEN);
+    drawing.strokeWeight(5);
+    drawing.line(0, 500, 800, 500);
+
+    drawing.fill(RED);
+    drawing.stroke(WHITE);
+    drawing.strokeWeight(2);
+    drawing.rect(300,350,200,100);
+  </script>
+</body>
+</html>
