@@ -1,6 +1,6 @@
-mindrawingjs = function () {};
+Mindrawingjs = function () {};
 
-mindrawingjs.prototype.setup = function (canvasID, width, height) {
+Mindrawingjs.prototype.setup = function (canvasID, width, height) {
   this.c = document.getElementById(canvasID);
   this.ctx = this.c.getContext('2d');
 
@@ -13,12 +13,12 @@ mindrawingjs.prototype.setup = function (canvasID, width, height) {
   this.height = this.c.height;
 };
 
-mindrawingjs.prototype.background = function(colour) {
+Mindrawingjs.prototype.background = function(colour) {
   this.ctx.fillStyle = colour;
   this.ctx.fillRect(0, 0, this.width, this.height);
 };
 
-mindrawingjs.prototype.line = function(ax, ay, bx, by) {
+Mindrawingjs.prototype.line = function(ax, ay, bx, by) {
   // so 1px lines are crisp, else they are spread over 2 px width and half the intensity
   if (this.ctx.lineWidth == 1) {
     ax += 0.5;
@@ -32,19 +32,19 @@ mindrawingjs.prototype.line = function(ax, ay, bx, by) {
   this.ctx.stroke();
 };
 
-mindrawingjs.prototype.stroke = function(colour) {
+Mindrawingjs.prototype.stroke = function(colour) {
   this.ctx.strokeStyle = colour;
 };
 
-mindrawingjs.prototype.strokeWeight = function(weight) {
+Mindrawingjs.prototype.strokeWeight = function(weight) {
   this.ctx.lineWidth = weight;
 };
 
-mindrawingjs.prototype.fill = function(colour) {
+Mindrawingjs.prototype.fill = function(colour) {
   this.ctx.fillStyle = colour;
 };
 
-mindrawingjs.prototype.rect = function(ax, ay, w, h) {
+Mindrawingjs.prototype.rect = function(ax, ay, w, h) {
   this.ctx.beginPath();
   this.ctx.rect(ax, ay, w, h);
   this.ctx.fill();

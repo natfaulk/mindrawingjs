@@ -12,7 +12,7 @@ The library requires an HTML canvas with a unique ID. eg:
 
 `<canvas id="myCanvas"></canvas>`
 
-### `drawing.setup(id[, width, height])`
+### `Mindrawingjs.setup(id[, width, height])`
 
 **id**: HTML canvas tag id  
 **width**: HTML canvas width (optional)  
@@ -21,27 +21,27 @@ The library requires an HTML canvas with a unique ID. eg:
 If canvas width and height are not specified, the current canvas width will be used. This is useful if the width has been set using the HTML tag eg:  
 `<canvas id="myCanvas" width="800" height="600"></canvas>`
 
-### `drawing.background(colour)`
+### `Mindrawingjs.background(colour)`
 Fills the screen with the specified color. Can be used to erase the canvas.
 
 **colour**: The colour to fill the screen with. CSS style color e.g. `#FF0000`
 
-### `drawing.stroke(colour)`
+### `Mindrawingjs.stroke(colour)`
 Sets line and shape outline colour.
 
 **colour**: The colour to set the line or outline to. CSS style color e.g. `#FF0000`
 
-### `drawing.strokeWeight(weight)`
+### `Mindrawingjs.strokeWeight(weight)`
 Sets line width in px
 
 **weight**: Width of line in px
 
-### `drawing.fill(colour)`
+### `Mindrawingjs.fill(colour)`
 Sets fill colour
 
 **colour**: The colour to set the fill to. CSS style color e.g. `#FF0000`
 
-### `drawing.rect(x, y, width, height)`
+### `Mindrawingjs.rect(x, y, width, height)`
 Draws a rectangle
 
 **x**: X-position of top left corner of the rectangle  
@@ -49,7 +49,7 @@ Draws a rectangle
 **width**: Width of rectangle in px  
 **height**: Height of rectangle in px  
 
-### `drawing.line(ax, ay, bx, by)`
+### `Mindrawingjs.line(ax, ay, bx, by)`
 Draw a line between two points
 
 **ax**: X-position of point 1  
@@ -78,7 +78,7 @@ Example
     const BLACK = '#000';
     const WHITE = '#FFF';
 
-    d = new mindrawingjs();
+    d = new Mindrawingjs();
 
     d.setup('myCanvas', 800, 600);
     d.background(BLACK);
@@ -91,7 +91,7 @@ Example
     d.strokeWeight(2);
     d.rect(300,350,200,100);
 
-    d2 = new mindrawingjs();
+    d2 = new Mindrawingjs();
     d2.setup('myCanvas2');
     d2.background(BLUE);
     d2.line(0, 0, d2.width, d2.height);
