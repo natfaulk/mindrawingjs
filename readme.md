@@ -58,6 +58,18 @@ Draw a line between two points
 **bx**: X-position of point 2  
 **by**: Y-position of point 2  
 
+### `Mindrawingjs.text(text, ax, ay)`
+Draws specified text at specified position
+
+**text**: Text to display  
+**ax**: X-position of bottom-left corner  
+**ay**: Y-position of bottom-left corner  
+
+### `Mindrawingjs.textSize(size)`
+Sets the text size
+
+**size**: Height of the text in px
+
 Example
 -------
 
@@ -96,6 +108,10 @@ Example
     d2.setup('myCanvas2');
     d2.background(BLUE);
     d2.line(0, 0, d2.width, d2.height);
+
+    d2.textSize(40);
+    d2.fill(RED);
+    d2.text("Hello world!", 25, 25 + 40);
 
   </script>
 </body>

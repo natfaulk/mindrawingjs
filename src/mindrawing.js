@@ -50,3 +50,11 @@ Mindrawingjs.prototype.rect = function(ax, ay, w, h) {
   this.ctx.fill();
   this.ctx.stroke();
 };
+
+Mindrawingjs.prototype.text = function(text, ax, ay) {
+  this.ctx.fillText(text, ax, ay);
+};
+
+Mindrawingjs.prototype.textSize = function(size) {
+  this.ctx.font = size + 'px Arial';
+};
