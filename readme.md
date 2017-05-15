@@ -65,27 +65,37 @@ Example
 <html lang="en">
 <head>
   <title>MinDrawingJS example</title>
-  <script src="../build/drawing.min.js"></script>
+  <script src="../build/mindrawing.min.js"></script>
 </head>
 <body>
-  <canvas id="myCanvas">
+  <canvas id="myCanvas"></canvas>
+  <canvas id="myCanvas2"></canvas>
 
   <script type="text/javascript">
     const RED = '#FF0000';
     const GREEN = '#00FF00';
+    const BLUE = '#0000FF';
     const BLACK = '#000';
     const WHITE = '#FFF';
 
-    drawing.setup('myCanvas', 800, 600);
-    drawing.background(BLACK);
-    drawing.stroke(GREEN);
-    drawing.strokeWeight(5);
-    drawing.line(0, 500, 800, 500);
+    d = new mindrawingjs();
 
-    drawing.fill(RED);
-    drawing.stroke(WHITE);
-    drawing.strokeWeight(2);
-    drawing.rect(300,350,200,100);
+    d.setup('myCanvas', 800, 600);
+    d.background(BLACK);
+    d.stroke(GREEN);
+    d.strokeWeight(5);
+    d.line(0, 500, 800, 500);
+
+    d.fill(RED);
+    d.stroke(WHITE);
+    d.strokeWeight(2);
+    d.rect(300,350,200,100);
+
+    d2 = new mindrawingjs();
+    d2.setup('myCanvas2');
+    d2.background(BLUE);
+    d2.line(0, 0, d2.width, d2.height);
+
   </script>
 </body>
 </html>
