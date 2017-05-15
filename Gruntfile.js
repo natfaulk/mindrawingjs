@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'build/drawing.min.js': ['src/drawing.js']
+          'build/mindrawing.min.js': ['src/mindrawing.js']
         }
       }
     }

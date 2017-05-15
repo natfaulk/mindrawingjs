@@ -10,7 +10,8 @@
     "html",
     "canvas",
     "drawing",
-    "js"
+    "js",
+    "mindrawingjs"
   ],
   "author": "natfaulk",
   "license": "MIT",

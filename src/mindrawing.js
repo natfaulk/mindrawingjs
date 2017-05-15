@@ -1,4 +1,4 @@
-drawing = {
+mindrawingjs = {
   setup: function(canvasID, width, height) {
     this.c = document.getElementById(canvasID);
     this.ctx = this.c.getContext('2d');
