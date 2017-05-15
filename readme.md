@@ -10,7 +10,7 @@ API Reference
 ### HTML canvas
 The library requires an HTML canvas with a unique ID. eg:
 
-`<canvas id="myCanvas">`
+`<canvas id="myCanvas"></canvas>`
 
 ### `drawing.setup(id[, width, height])`
 
@@ -19,7 +19,7 @@ The library requires an HTML canvas with a unique ID. eg:
 **height**: HTML canvas height (optional)  
 
 If canvas width and height are not specified, the current canvas width will be used. This is useful if the width has been set using the HTML tag eg:  
-`<canvas id="myCanvas" width="800" height="600">`
+`<canvas id="myCanvas" width="800" height="600"></canvas>`
 
 ### `drawing.background(colour)`
 Fills the screen with the specified color. Can be used to erase the canvas.
