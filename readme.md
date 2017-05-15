@@ -1,5 +1,5 @@
-MinDrawingJS
-============
+MinDrawingJS - Minimal Drawing JS
+=================================
 
 I find myself using [p5.js](https://p5js.org/) a lot. However often I don't want it as the focal point of the application. Therefore often I don't want the draw function constantly looping. I also find I only use a vary small portion of the library (the basic drawing functions). Therefore I have made a library that is effectively a thin wrapper over the underlying HTML canvas methods with a similar API to p5.js but without all the unnecessary stuff I don't want.
 
