@@ -60,6 +60,14 @@ Mindrawingjs = function () {};
     this.ctx.font = size + 'px Arial';
   };
 
+  Mindrawingjs.prototype.ellipse = function(x, y, w, h) {
+    if (arguments.length == 3) h = w;
+    this.ctx.beginPath();
+    this.ctx.ellipse(x, y, w, h, 0, 0, 2 * Math.PI);
+    this.ctx.fill();
+    this.ctx.stroke();
+  };
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Mindrawingjs;
   }
