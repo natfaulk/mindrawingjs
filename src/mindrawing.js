@@ -63,7 +63,7 @@ Mindrawingjs = function () {};
   Mindrawingjs.prototype.ellipse = function(x, y, w, h) {
     if (arguments.length == 3) h = w;
     this.ctx.beginPath();
-    this.ctx.ellipse(x, y, w, h, 0, 0, 2 * Math.PI);
+    this.ctx.ellipse(x, y, w / 2, h / 2, 0, 0, 2 * Math.PI);
     this.ctx.fill();
     this.ctx.stroke();
   };

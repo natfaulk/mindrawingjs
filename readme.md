@@ -58,7 +58,7 @@ Draws an ellipse (or circle)
 **w**: Width of ellipse in px  
 **h**: Height of ellipse in px (optional)  
 
-If the final parameter is omitted, the ellipse will be a circle with radius w.
+If the final parameter is omitted, the ellipse will be a circle with diameter w.
 
 ### `Mindrawingjs.line(ax, ay, bx, by)`
 Draw a line between two points
