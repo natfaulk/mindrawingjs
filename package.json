@@ -1,8 +1,9 @@
 {
   "name": "mindrawingjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A very basic HTML 5 drawing library. Taking inspiration from p5.js but much ligter weight.",
   "main": "build/mindrawing.min.js",
+  "types": "build/mindrawing.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
