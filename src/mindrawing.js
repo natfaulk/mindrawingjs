@@ -49,7 +49,9 @@ Mindrawingjs = function () {};
     this.ctx.beginPath();
     this.ctx.rect(ax, ay, w, h);
     this.ctx.fill();
-    this.ctx.stroke();
+    if (this.ctx.lineWidth) {
+      this.ctx.stroke();
+    }
   };
 
   Mindrawingjs.prototype.text = function(text, ax, ay) {
@@ -65,7 +67,9 @@ Mindrawingjs = function () {};
     this.ctx.beginPath();
     this.ctx.ellipse(x, y, w / 2, h / 2, 0, 0, 2 * Math.PI);
     this.ctx.fill();
-    this.ctx.stroke();
+    if (this.ctx.lineWidth) {
+      this.ctx.stroke();
+    }
   };
 
   Mindrawingjs.prototype.getCtx = function() {
