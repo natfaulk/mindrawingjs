@@ -68,6 +68,10 @@ Mindrawingjs = function () {};
     this.ctx.stroke();
   };
 
+  Mindrawingjs.prototype.getCtx = function() {
+    return this.ctx;
+  };
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Mindrawingjs;
   }

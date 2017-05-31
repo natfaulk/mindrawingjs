@@ -25,4 +25,6 @@ declare class mindrawingjs {
 
     textSize(t: any): void;
 
+    getCtx(): any;
+
 }
