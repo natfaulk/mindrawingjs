@@ -22,6 +22,12 @@ The library requires an HTML canvas with a unique ID. eg:
 If canvas width and height are not specified, the current canvas width will be used. This is useful if the width has been set using the HTML tag eg:  
 `<canvas id="myCanvas" width="800" height="600"></canvas>`
 
+### `Mindrawingjs.setCanvasSize(width, height)`
+Changes the canvas size to the specified size in pixels
+
+**width**: The new canvas width  
+**height**: The new canvas height  
+
 ### `Mindrawingjs.background(colour)`
 Fills the screen with the specified color. Can be used to erase the canvas.
 

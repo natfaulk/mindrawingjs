@@ -14,6 +14,13 @@ Mindrawingjs = function () {};
     this.height = this.c.height;
   };
 
+  Mindrawingjs.prototype.setCanvasSize = function(width, height) {
+    this.c.width = width;
+    this.c.height = height;
+    this.width = this.c.width;
+    this.height = this.c.height;
+  };
+
   Mindrawingjs.prototype.background = function(colour) {
     this.ctx.fillStyle = colour;
     this.ctx.fillRect(0, 0, this.width, this.height);
