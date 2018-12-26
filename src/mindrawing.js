@@ -61,6 +61,14 @@ Mindrawingjs = function () {};
     }
   };
 
+  Mindrawingjs.prototype.rotatedRect = function(ax, ay, w, h, angle) {
+    this.ctx.save();
+    this.ctx.translate(ax, ay);
+    this.ctx.rotate(angle);
+    this.rect(0, 0, w, h);
+    this.ctx.restore();
+  };
+
   Mindrawingjs.prototype.text = function(text, ax, ay) {
     this.ctx.fillText(text, ax, ay);
   };
