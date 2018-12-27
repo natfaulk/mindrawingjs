@@ -61,11 +61,13 @@ Mindrawingjs = function () {};
     }
   };
 
-  Mindrawingjs.prototype.rotatedRect = function(ax, ay, w, h, angle) {
+  Mindrawingjs.prototype.rotatedRect = function(ax, ay, w, h, angle, originX, originY) {
+    if (originX === undefined) originX = 0
+    if (originY === undefined) originY = 0
     this.ctx.save();
     this.ctx.translate(ax, ay);
-    this.ctx.rotate(angle);
-    this.rect(0, 0, w, h);
+    this.ctx.rotate(angle);   
+    this.rect(-originX, -originY, w, h);
     this.ctx.restore();
   };
 

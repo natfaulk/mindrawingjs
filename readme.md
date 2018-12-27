@@ -56,14 +56,17 @@ Draws a rectangle
 **width**: Width of rectangle in px  
 **height**: Height of rectangle in px  
 
-### `Mindrawingjs.rotatedRect(x, y, width, height, angle)`
+### `Mindrawingjs.rotatedRect(x, y, width, height, angle[, originX, originY])`
 Draws a rectangle
 
 **x**: X-position of top left corner of the rectangle  
 **y**: Y-position of top left corner of the rectangle  
 **width**: Width of rectangle in px  
 **height**: Height of rectangle in px  
-**angle**: Angle of rotation in radians
+**angle**: Angle of rotation in radians  
+**originX**: X-position of origin point about which rotation occurs and shifts the local coordinate system of the rectangle's origin to here (optional, defaults to 0)  
+**originY**: X-position of origin point about which rotation occurs and shifts the local coordinate system of the rectangle's origin to here (optional, defaults to 0)
+
 
 ### `Mindrawingjs.ellipse(x, y, w[, h])`
 Draws an ellipse (or circle)
