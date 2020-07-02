@@ -6,7 +6,7 @@ I find myself using [p5.js](https://p5js.org/) a lot. However often I don't want
 
 API Reference
 -------------
-Version: 0.1.0  
+Version: 1.0.0  
 
 ### HTML canvas
 The library requires an HTML canvas with a unique ID. eg:
