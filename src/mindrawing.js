@@ -1,8 +1,10 @@
 Mindrawingjs = function () {};
 
 (function(){
-  Mindrawingjs.prototype.setup = function (canvasID, width, height) {
-    this.c = document.getElementById(canvasID);
+  // Pass in either a canvas object or a html canvas ID
+  Mindrawingjs.prototype.setup = function (canvas, width, height) {
+    if (typeof canvas === 'string') this.c = document.getElementById(canvas);
+    else this.c = canvas
     this.ctx = this.c.getContext('2d');
 
     if (arguments.length == 3) {

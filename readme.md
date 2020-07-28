@@ -6,16 +6,16 @@ I find myself using [p5.js](https://p5js.org/) a lot. However often I don't want
 
 API Reference
 -------------
-Version: 1.0.0  
+Version: 1.1.0  
 
 ### HTML canvas
-The library requires an HTML canvas with a unique ID. eg:
+The library requires either a canvas object or an HTML canvas with a unique ID. eg:
 
 `<canvas id="myCanvas"></canvas>`
 
-### `Mindrawingjs.setup(id[, width, height])`
+### `Mindrawingjs.setup(canvas[, width, height])`
 
-**id**: HTML canvas tag id  
+**canvas**: Either a canvas object or an HTML canvas tag id as a string  
 **width**: HTML canvas width (optional)  
 **height**: HTML canvas height (optional)  
 
