@@ -86,6 +86,18 @@ Draw a line between two points
 **bx**: X-position of point 2  
 **by**: Y-position of point 2  
 
+### `Mindrawingjs.bezier(ax, ay, bx, by, h1x, h1y, h2x, h2y)`
+Draw a bezier curve between two points
+
+**ax**: X-position of start point  
+**ay**: Y-position of start point  
+**bx**: X-position of end point  
+**by**: Y-position of end point  
+**h1x**: X-position of handle 1 (start point handle)  
+**h1y**: Y-position of handle 1 (start point handle)  
+**h2x**: X-position of handle 2 (end point handle)  
+**h2y**: Y-position of handle 2 (end point handle)  
+
 ### `Mindrawingjs.text(text, ax, ay)`
 Draws specified text at specified position
 
