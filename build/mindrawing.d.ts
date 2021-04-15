@@ -7,24 +7,31 @@ declare class mindrawingjs {
 
     background(t: any): void;
 
-    ellipse(t: any, i: any, n: any, e: any, ...args: any[]): void;
+    bezier(t: any, i: any, e: any, n: any, s: any, h: any, o: any, c: any): void;
+
+    ellipse(t: any, i: any, e: any, n: any, ...args: any[]): void;
 
     fill(t: any): void;
 
-    line(t: any, i: any, n: any, e: any): void;
+    getCtx(): any;
 
-    rect(t: any, i: any, n: any, e: any): void;
+    line(t: any, i: any, e: any, n: any): void;
 
-    setup(t: any, i: any, n: any, ...args: any[]): void;
+    rect(t: any, i: any, e: any, n: any): void;
+
+    rotatedRect(t: any, i: any, e: any, n: any, s: any, h: any, o: any): void;
+
+    setCanvasSize(t: any, i: any): void;
+
+    setup(t: any, i: any, e: any, ...args: any[]): void;
 
     stroke(t: any): void;
 
     strokeWeight(t: any): void;
 
-    text(t: any, i: any, n: any): void;
+    text(t: any, i: any, e: any): void;
 
     textSize(t: any): void;
 
-    getCtx(): any;
-
 }
+

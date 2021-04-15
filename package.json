@@ -1,6 +1,6 @@
 {
   "name": "mindrawingjs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A very basic HTML 5 drawing library. Taking inspiration from p5.js but much lighter weight.",
   "main": "build/mindrawing.min.js",
   "types": "build/mindrawing.d.ts",
