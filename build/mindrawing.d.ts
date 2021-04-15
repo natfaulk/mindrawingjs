@@ -5,33 +5,33 @@ export = mindrawingjs;
 declare class mindrawingjs {
     constructor();
 
-    background(t: any): void;
+    background(colour: any): void;
 
-    bezier(t: any, i: any, e: any, n: any, s: any, h: any, o: any, c: any): void;
+    bezier(ax: number, ay: number, bx: number, by: number, h1x: number, h1y: number, h2x: number, h2y: number): void;
 
-    ellipse(t: any, i: any, e: any, n: any, ...args: any[]): void;
+    ellipse(x: number, y: number, w: number, h?: number): void;
 
-    fill(t: any): void;
+    fill(colour: string): void;
 
     getCtx(): any;
 
-    line(t: any, i: any, e: any, n: any): void;
+    line(ax: number, ay: number, bx: number, by: number): void;
 
-    rect(t: any, i: any, e: any, n: any): void;
+    rect(ax: number, ay: number, w: number, h: number): void;
 
-    rotatedRect(t: any, i: any, e: any, n: any, s: any, h: any, o: any): void;
+    rotatedRect(ax: number, ay: number, w: number, h: number, angle: number, originX?: number, originY?: number): void;
 
-    setCanvasSize(t: any, i: any): void;
+    setCanvasSize(twidth: number, height: number): void;
 
-    setup(t: any, i: any, e: any, ...args: any[]): void;
+    setup(canvas: any, width?: number, height?: number): void;
 
-    stroke(t: any): void;
+    stroke(colour: string): void;
 
-    strokeWeight(t: any): void;
+    strokeWeight(weight: number): void;
 
-    text(t: any, i: any, e: any): void;
+    text(text: string, ax: number, ay: number): void;
 
-    textSize(t: any): void;
+    textSize(size: number): void;
 
 }
 
