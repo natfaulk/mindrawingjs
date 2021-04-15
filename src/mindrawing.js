@@ -44,8 +44,8 @@ Mindrawingjs = function () {};
 
   Mindrawingjs.prototype.bezier = function(ax, ay, bx, by, h1x, h1y, h2x, h2y) {
     this.ctx.beginPath();
-    d.ctx.moveTo(ax, ay);
-    d.ctx.bezierCurveTo(h1x, h1y, h2x, h2y, bx, by);
+    this.ctx.moveTo(ax, ay);
+    this.ctx.bezierCurveTo(h1x, h1y, h2x, h2y, bx, by);
     this.ctx.stroke();
   };
 
